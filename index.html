@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" method="post" action="">
+        <h1 class="title">
+          SISTEMA DE MULTAS<br />
+          DE TRANSITO
+        </h1>
+        <label class="label" for="email">CORREO</label><br />
+        <input
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="on"
+          required
+        /><br />
+        <label class="label" for="password">CONTRASEÑA</label><br />
+        <input
+          class="input"
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="on"
+          required
+        /><br />
+        <div class="content-check">
+          <input clas type="checkbox" />
+          <label for="checkbox" name="">¿Mantener activa la sesion?</label>
+        </div>
+        <button class="btn" type="submit" onclick="return login()">
+          Ingresar
+        </button>
+        <a href="/">¿Olvidaste tu contraseña?</a>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/index.js"></script>
+</html>

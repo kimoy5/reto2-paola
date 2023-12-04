@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+}
+.content-image-construc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-aux {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+}
+@media (max-width: 850px) {
+  .image-aux {
+    width: 100%;
+  }
+}

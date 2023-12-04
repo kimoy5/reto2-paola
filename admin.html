@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-contanier">
+        <div class="title">
+          <h2>CREAR MULTA</h2>
+        </div>
+        <form action="#" id="form-crear" class="formulario" method="">
+          <label for="name">Nombre y Apellido:</label><br />
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            value=""
+          /><br />
+          <label for="numberce">Numero de Cedula:</label><br />
+          <input
+            type="number"
+            class="form-control"
+            id="numberce"
+            name="numberce"
+            value=""
+          /><br />
+          <label for="correo">Correo:</label><br />
+          <input
+            type="email"
+            class="form-control"
+            id="correo"
+            name="correo"
+            value=""
+          /><br />
+          <label for="fecha">Fecha:</label><br />
+          <input
+            type="date"
+            class="form-control"
+            id="fecha"
+            name="fecha"
+            value=""
+          /><br />
+          <br />
+          <label for="observa">Realizar Observaciones:</label><br />
+          <textarea
+            type="text"
+            class="form-control-tarea"
+            id="observa"
+            name="observa"
+            value=""
+          ></textarea
+          ><br />
+          <button id="btn-addMulta" onclick="return confirmar()">
+            <i class="fa-solid fa-plus" id="mas"></i>
+          </button>
+        </form>
+        <section>
+          <form action="">
+            <input
+              type="text"
+              class="form-control"
+              id="buscar"
+              placeholder="buscar..."
+            />
+          </form>
+          <ul id="listaMulta">
+            <li class="list">
+              <strong>Pepito</strong>
+              <strong>12345</strong>
+              <strong>pepito@gmail.com</strong>
+              <strong>12/12/2023</strong>
+              <strong>por no pagar!</strong>
+              <i class="fa-solid fa-trash borrar"></i>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/sweealer.js"></script>
+  <script src="./js/admin2.js"></script>
+  <script>
+    function confirmar() {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Usuario creado!",
+        showConfirmButton: true,
+        width: "80%",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
+        stopKeydownPropagation: false,
+        customClass: {},
+        confirmButtonColor: "#3085d6",
+      });
+    }
+  </script>
+</html>

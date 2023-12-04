@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.sub-contanier {
+  width: 40%;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
+  font-family: "Shadows Into Light", cursive;
+}
+ul li {
+  list-style: none;
+  font-family: "Shadows Into Light", cursive;
+}
+.formulario {
+  padding: 5px;
+}
+label {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+}
+.form-control {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+.form-control-tarea {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+button {
+  margin: 15px 0 15px 0;
+  width: 100%;
+  height: 45px;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0d410d;
+}
+ul {
+  margin-top: 25px;
+}
+li {
+  height: 70px;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+strong {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#mas {
+  color: white;
+}
+.fa-solid,
+.fas {
+  cursor: pointer;
+  color: red;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#delete-button {
+  width: 40px;
+  margin-right: 15px;
+  background-color: white;
+}
+.textoFiltrado {
+  display: none !important;
+}
+@media screen and (max-width: 870px) {
+  .sub-contanier {
+    width: 85%;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .form-control-tarea {
+    width: 100%;
+  }
+}

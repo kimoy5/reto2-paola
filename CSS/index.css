@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(243, 17, 224, 0.5)),
+    url(https://img.freepik.com/vector-gratis/ilustracion-concepto-policia-transito_114360-13682.jpg?w=740&t=st=1700790651~exp=1700791251~hmac=aa9b7aca6c55c5621c3b4cf7ead61b90cc7c74113b397f807b9a889c6c234d92);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.title {
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-bottom: 35px;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.content-check {
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+label {
+  color: white;
+}
+
+.input {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.input:hover {
+  outline: 0;
+}
+.envio {
+  width: 100%;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 25px;
+  color: black;
+}
+.btn {
+  width: 100%;
+  padding: 4px;
+  /* padding: 8px 15px; */
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 34px;
+  font-size: 15px;
+  color: white;
+  /* font-weight: 900; */
+  text-align: center;
+  background: darkgrey;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #7b6363;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 530px) {
+  .title {
+    font-size: 18px;
+  }
+}

@@ -13,7 +13,7 @@ function login() {
   let usuario = document.getElementById("email").value;
   let clave = document.getElementById("password").value;
   if (recibirDatos(usuario, clave)) {
-    window.location.href = "https://kimoy5.github.io/reto-paola/";
+    window.location.href = "https://kimoy5.github.io/home-paola/";
     alert("Ingrerso!");
   } else {
     alert("Usuario o Contraseña incorrectos!⛔");
